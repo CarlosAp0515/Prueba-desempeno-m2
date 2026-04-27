@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    height: 150px;
+    background-color: #000000;
+    border-bottom: 3px solid #910303; /*linea de color bronce abajo(bottom) solid = linea continua con 3px de grosor*/
+}
+
+.navbar{
+    display: flex; /* pone los elementos de forma horizontal) */
+    align-items: center;
+    margin-left: auto; /* manda lo elemtos a la derecha*/
+    gap: 30px; /* espacio entre items*/
+}
+
+.navbar a{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #910303;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover{
+    color: rgb(211, 6, 6);
+    transform: scale(1.2);
+}
+
+.header h1{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 65px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8); 
+}
+
+.logo-band{
+    width:300px;
+}
+
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px; /* Ajusta según el tamaño de tu pantalla */
+    letter-spacing: 2px; /* Agrega un pequeño espacio entre letras */
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8); 
+}
+
+h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+h3{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+p{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body {
+    background-color: #0b0b0f;
+    color: #f5f5f5;
+    line-height: 1.5;
+}
+
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)),url(img/img-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    
+    /* Alineación */
+    display: flex;
+    align-items: flex-end; /* Empuja el contenido al fondo */
+    justify-content: center; /* Centra horizontalmente */
+    text-align: center;      /* Centra el texto y el botón */
+    padding-bottom: 30px;    /* Espacio desde el borde inferior */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column; /* Pone el botón debajo del h1 */
+    align-items: center;    /* Centra el botón respecto al h1 */
+    gap: 20px;              /* Espacio entre el texto y el botón */
+}
+
+.btn-see-events {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    display: inline-block;
+    background: linear-gradient(135deg, #910303, #dd0000);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 15px; 
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.btn-see-events:hover {
+    transform: scale(1.05); /* Efecto visual al pasar el mouse */
+}
+
+.events-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    flex-direction: column;
+}
+
+.events-table{
+    font-family: 'Bebas Neue', sans-serif; 
+    letter-spacing: 2px;
+    font-size: 25px;
+    /* Cambiamos a collapse para que el encabezado y el cuerpo se toquen */
+    border-collapse: collapse;
+}
+
+.events-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.events-table-header{
+    background: linear-gradient(135deg, #910303, #dd0000);
+}
+
+.events-table-header th {
+    color: white;
+    padding: 15px 40px;
+    border: none;
+}
+
+.black-dark{
+    background-color: #0b0b0f;
+}
+
+.black-light{
+    background-color: #1b1b1b;
+}
+
+.btn-buy{
+    display: inline-block;
+    background: linear-gradient(135deg, #910303, #dd0000);
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.btn-buy:hover {
+    transform: translateY(-3px) scale(1.05); /* Efecto visual al pasar el mouse */
+    filter: brightness(1.2); /* aumenta el brillo de fondo*/
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.about-container{
+    background-color: #101010;
+    display: flex;
+    flex-direction: row; /* Alineación horizontal: Imagen | Texto */
+    align-items: flex-start; /* Alinea los elementos al inicio de la parte superior */
+    padding: 80px 5%;
+    gap: 50px;
+}
+
+.img-about{
+    flex: 1; /* Toma una parte proporcional del espacio*/
+    max-width: 500px;
+}
+
+.img-about img{
+    width: 100%;
+    border-radius: 5px;
+    border: 3px solid #910303;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espacio entre la intro y la tarjeta de filosofía */
+    text-align: left;
+}
+.about-content{
+    flex: 1.2; 
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espacio entre la intro y la tarjeta de filosofía */
+    text-align: left;
+}
+
+.about-content {
+    
+    max-width: 100%;
+    margin: 0;
+    color: white;
+}
+
+.title-list {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
+    color: #910303;
+    margin-bottom: 20px;
+}
+
+.list-value {
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+
+.list-value li {
+    margin-bottom: 12px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.multimedia{
+    display: grid;
+    /* Creamos dos columnas: una para los platos y otra para el video */
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+    padding: 60px 5%;
+    align-items: center;
+}
+
+.img-gallery-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Hacemos que las fotos se organicen en 3 columnas pequeñas */
+    gap: 15px;
+}
+
+.img-gallery-card img{
+    display: block;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    justify-items: center;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.gallery-card {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #910303;
+}
+
+.our-members{
+    background-color: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px;
+    gap: 80px;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 60px; /*espacio entre el contenido y los bordes de la tarjeta*/
+    border-radius: 12px;
+    border: 3px solid #910303;
+    height: 100%; /* ESTO HACE QUE TODAS MIDAN LO MISMO */
+    transition: transform 0.3s ease;
+}
+
+.member:hover{
+     transform: translateY(-5px);
+}
+
+.img-members{
+     width: 100%;
+    height: auto; 
+    padding-top: 10px;
+    object-fit: cover; /* Recorta la imagen para que no se deforme */
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.members-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px; /* Espacio entre una tarjeta y otra */
+    width: 100%;
+    max-width: 500px;
+}
